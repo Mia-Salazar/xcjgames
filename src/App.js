@@ -1,7 +1,17 @@
+import { withTranslation } from "react-i18next";
+import React, { useEffect, useState } from "react";
+
+
+import i18n from "./i18n";
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [language, setLanguage] = useState("en");
+	const changeLanguage = (language) => {
+		i18n.changeLanguage(language);
+		setLanguage(language);
+	};
   return (
     <div className="App">
       <header className="App-header">
@@ -17,9 +27,14 @@ function App() {
         >
           Learn React
         </a>
+        {i18n.t("hi")}
+        <div className="language-buttons" aria-label={i18n.t("navbar.lang")}>
+			<button  onClick={() => changeLanguage("en")}>en</button>
+			<button  onClick={() => changeLanguage("es")}>es</button>
+		</div>
       </header>
     </div>
   );
 }
 
-export default App;
+export default withTranslation()(App);
