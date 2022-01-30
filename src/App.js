@@ -1,39 +1,21 @@
 import { withTranslation } from "react-i18next";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { Switch,Route } from "react-router-dom";
 
-
-import i18n from "./i18n";
-import logo from './logo.svg';
 import './App.css';
+import Home from "./app/pages/Home/Home";
 
-function App() {
-  const [language, setLanguage] = useState("en");
-	const changeLanguage = (language) => {
-		i18n.changeLanguage(language);
-		setLanguage(language);
-	};
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {i18n.t("hi")}
-        <div className="language-buttons" aria-label={i18n.t("navbar.lang")}>
-			<button  onClick={() => changeLanguage("en")}>en</button>
-			<button  onClick={() => changeLanguage("es")}>es</button>
-		</div>
-      </header>
-    </div>
+		<>
+      <main>
+        <Switch>
+          <Route exact path="/about" component={Home} />
+        </Switch>
+      </main>
+			<footer>
+			</footer>
+		</>
   );
 }
 
