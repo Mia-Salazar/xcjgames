@@ -13,7 +13,7 @@ export const ConsoleText = ({text}) => {
         const timeOut = setTimeout(() => {
             setCurrentText((value) => value + translatedText.charAt(index.current));
             index.current++;
-        }, 100);
+        }, 50);
         return () => {
             clearTimeout(timeOut);
         }

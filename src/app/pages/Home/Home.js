@@ -1,13 +1,18 @@
 import React from "react";
 
-import i18n from "../../../i18n";
+import Logo from "../../../assets/images/logo.png"
 import ConsoleText from "../../components/atoms/ConsoleText/ConsoleText";
 import "./Home.scss";
 
 export const Home = () => {
 	return (
         <section className="home">
-			<ConsoleText text="home"/>
+			<ConsoleText text="home.title"/>
+			<ConsoleText text="home.subtitle"/>
+			<ConsoleText text="home.language"/>
+			<figure className="home__figure">
+				<img className="home__image" alt="" src={Logo}/>
+			</figure>
 		</section>
 	);
 };

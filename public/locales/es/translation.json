@@ -1,3 +1,7 @@
 {
-    "home": "abdc efig hijoklmnñ"
+    "home": {
+        "title": "Te damos la bienvenida a XCGJ Games",
+        "subtitle": "Para consultar más información puede ir a la página de ayuda añadiendo el comando 'help' en la barra inferior",
+        "language": "Write 'help' to change language"
+    }
 }

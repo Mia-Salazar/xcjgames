@@ -1,3 +1,7 @@
 {
-    "home": "hi1 adsadsa sdsads"
+    "home": {
+        "title": "Welcome to XCJ Games",
+        "subtitle": "To consult more information you can go to the help page by adding the 'help' command in the bottom bar",
+        "language": "Escriba 'help' para cambiar el idioma"
+    }
 }
