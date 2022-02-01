@@ -3,4 +3,9 @@
 .terminal {
   height: 100vh;
   background-color: $black;
+
+  &__main {
+    height: 90vh;
+    padding: 30px;
+  }
 }
