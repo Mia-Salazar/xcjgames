@@ -1,0 +1,27 @@
+@import "../../../../assets/stylesheets/settings/variables";
+
+.terminal {
+    height: 100vh;
+    background-color: $black;
+
+    &__main {
+        height: 90vh;
+        padding: 30px;
+    
+        @media (min-width: 768px) {
+          height: 95vh;
+        }
+    }
+    
+      &__footer {
+        height: 10vh;
+        position: sticky;
+        bottom: 0;
+        background-color: $black;
+    
+        @media (min-width: 768px) {
+          height: 5vh;
+        }
+    }
+}
+

@@ -6,14 +6,10 @@ import "./TerminalOptions.scss";
 export const TerminalOptions = () => {
 	return (
         <form className="terminal-options">
-            <label className="terminal-options__label" for="action"> visitor<span className="terminal-options__greater">{'>'}</span> </label>
+            <label className="terminal-options__label" htmlFor="action"> visitor<span className="terminal-options__greater">{'>'}</span> </label>
             <input className="terminal-options__input" type="text" id="action" name="action"></input>
         </form>
 	);
-};
-
-TerminalOptions.propTypes = {
-	text: PropTypes.string.isRequired,
 };
 
 TerminalOptions.displayName = "TerminalOptions";
