@@ -3,6 +3,7 @@ import { withTranslation } from "react-i18next";
 import { Routes,Route } from "react-router-dom";
 
 import './App.scss';
+import TerminalOptions from "./app/components/molecules/TerminalOptions/TerminalOptions";
 import Home from "./app/pages/Home/Home";
 
 const App = () => {
@@ -14,7 +15,8 @@ const App = () => {
             <Route exact path='/' element={< Home />}></Route>
           </Routes>
         </main>
-        <footer>
+        <footer className="terminal__footer">
+          <TerminalOptions />
         </footer>
       </div>
 		</>
