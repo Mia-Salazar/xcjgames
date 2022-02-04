@@ -8,8 +8,6 @@ export const Home = () => {
 	return (
         <section className="home">
 			<ConsoleText text="home.title"/>
-			<ConsoleText text="home.subtitle"/>
-			<ConsoleText text="home.language"/>
 			<figure className="home__figure">
 				<img className="home__image" alt="" src={Logo}/>
 			</figure>

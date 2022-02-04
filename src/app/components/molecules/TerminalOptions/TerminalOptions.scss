@@ -1,0 +1,32 @@
+@import "../../../../assets/stylesheets/settings/variables";
+
+.terminal-options {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &__label {
+        color: $primary-color;
+    }
+
+    &__label, &__input {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 18px;
+    }
+
+    &__greater {
+        margin-left: 5px;
+        animation: fade 1s infinite;
+    }
+
+    &__input {
+        height: 100%;
+        display: flex;
+        flex-grow: 1;
+        padding-left: 10px;
+        background-color: transparent;
+        border: none;
+        color: $primary-color;
+    }
+
+}

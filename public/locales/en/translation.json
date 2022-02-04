@@ -1,7 +1,5 @@
 {
     "home": {
-        "title": "Welcome to XCJ Games",
-        "subtitle": "To consult more information you can go to the help page by adding the 'help' command in the bottom bar",
-        "language": "Escriba 'help' para cambiar el idioma"
+        "title": "Welcome to XCJ Games\nTo see the complete message press any key\nType the 'help' command to see more information in the bottom bar\nEscriba 'help' para cambiar el idioma"
     }
 }
