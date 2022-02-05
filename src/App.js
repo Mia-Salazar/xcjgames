@@ -10,7 +10,10 @@ import Home from "./app/pages/Home/Home";
 const App = () => {
   const [completeState, setCompleteState] = useState(false);
   const completeText = () => {
-    setCompleteState(!completeState)
+    setCompleteState(!completeState);
+  }
+  const reset = () => {
+    setCompleteState(false);
   }
   return (
 		<>
@@ -21,7 +24,7 @@ const App = () => {
         </Routes>
       </main>
       <footer className="terminal__footer">
-        <TerminalOptions completeText={completeText}/>
+        <TerminalOptions completeText={completeText} reset={reset}/>
       </footer>
 
 		</>
