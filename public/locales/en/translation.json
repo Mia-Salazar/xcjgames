@@ -1,5 +1,9 @@
 {
     "home": {
         "title": "Welcome to XCJ Games\nTo see the complete message press any key\nType the 'help' command to see more information in the bottom bar\nEscriba 'help' para cambiar el idioma"
+    },
+    "help": {
+        "title": "Help",
+        "subtitle": "These are the commands available on XCJ Games\nabout: General information\neducation: Information on education and training \nportfolio: Information on professional and personal projects\nspanish: Change the language to Spanish\nenglish: Change the language to English"
     }
 }
