@@ -4,6 +4,10 @@
     },
     "help": {
         "title": "Ayuda",
-        "subtitle": "Estos son los comandos disponibles sobre XCJ Games\nabout: Información general\neducation: Información sobre la educación y formación \nportfolio: Información sobre los proyectos profesionales y personales\nspanish: Cambiar el idioma a español\nenglish: Cambiar el idioma a inglés "
+        "subtitle": "Estos son los comandos disponibles sobre XCJ Games\nhome: Inicio\nabout: Información general\neducation: Información sobre la educación y formación \nportfolio: Información sobre los proyectos profesionales y personales\nspanish: Cambiar el idioma a español\nenglish: Cambiar el idioma a inglés "
+    },
+    "about" : {
+        "title": "Sobre mí",
+        "subtitle": "Soy Carlos Jiménez\nSoy un programador de juegos con fuertes habilidades en C ++, C #, Unity, Godot y arquitectura de software. He desarrollado y publicado varios minijuegos y prototipos independientes por mi cuenta, además de colaborar con artistas, diseñadores y otros programadores.\nHe estado jugando videojuegos casi todos los días desde que pude agarrar un controlador, lo que me ha dado mucha experiencia sobre la mecánica y los diseños de muchos géneros. También soy un jugador habitual de lápiz y papel y un maestro del juego, así como un gran fanático de los juegos de cartas y de mesa.\nMi experiencia trabajando con tecnologías web me ayudó a desarrollar mis habilidades interpersonales y de codificación, colaborando con diferentes departamentos y clientes."
     }
 }

@@ -7,11 +7,11 @@ import i18n from "./i18n";
 import TerminalOptions from "./app/components/molecules/TerminalOptions/TerminalOptions";
 import Help from "./app/pages/Help/Help";
 import Home from "./app/pages/Home/Home";
+import About from "./app/pages/About/About";
 
 const App = () => {
   const [completeState, setCompleteState] = useState(false);
   const [language, setLanguage] = useState("en");
-  const [resetText, setResetText] = useState(false);
   const completeText = () => {
     setCompleteState(!completeState);
   }
@@ -19,16 +19,16 @@ const App = () => {
     setCompleteState(false);
   }
   useEffect(() => {
-    setResetText(true);
     i18n.changeLanguage(language);
-    setResetText(false);
   }, [language]);
   return (
 		<>
       <main className="terminal__main">         
         <Routes>
           <Route exact path='/' element={<Home completeState={completeState}/>}></Route>
+          <Route exact path='/home' element={<Home completeState={completeState}/>}></Route>
           <Route exact path='/help' element={<Help completeState={completeState}/>}></Route>
+          <Route exact path='/about' element={<About completeState={completeState}/>}></Route>
         </Routes>
       </main>
       <footer className="terminal__footer">
