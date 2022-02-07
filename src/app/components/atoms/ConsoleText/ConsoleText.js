@@ -5,9 +5,9 @@ import i18n from "../../../../i18n";
 import "./ConsoleText.scss";
 
 export const ConsoleText = ({text, complete = false}) => {
+    const [currentText, setCurrentText] = useState("");
     const translatedText = i18n.t(text);
     const index = useRef(0);
-    const [currentText, setCurrentText] = useState("");
 
     useEffect(() => {
         if (!complete && currentText.length !== translatedText.length) {
@@ -21,9 +21,7 @@ export const ConsoleText = ({text, complete = false}) => {
         } else {
             setCurrentText(translatedText);
         }
-
     }, [translatedText, currentText, complete]);
-
 	return (
         <p className="console-text">
             <span className="console-text__more"> {'>'} </span>
@@ -34,6 +32,7 @@ export const ConsoleText = ({text, complete = false}) => {
 
 ConsoleText.propTypes = {
 	text: PropTypes.string.isRequired,
+    complete: PropTypes.bool,
 };
 
 ConsoleText.displayName = "ConsoleText";

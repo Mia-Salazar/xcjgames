@@ -1,20 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { withTranslation } from "react-i18next";
 import { Routes,Route } from "react-router-dom";
 
 import './App.scss';
+import i18n from "./i18n";
 import TerminalOptions from "./app/components/molecules/TerminalOptions/TerminalOptions";
 import Help from "./app/pages/Help/Help";
 import Home from "./app/pages/Home/Home";
 
 const App = () => {
   const [completeState, setCompleteState] = useState(false);
+  const [language, setLanguage] = useState("en");
+  const [resetText, setResetText] = useState(false);
   const completeText = () => {
     setCompleteState(!completeState);
   }
-  const reset = () => {
+  const resetTextStatus = () => {
     setCompleteState(false);
   }
+  useEffect(() => {
+    setResetText(true);
+    i18n.changeLanguage(language);
+    setResetText(false);
+  }, [language]);
   return (
 		<>
       <main className="terminal__main">         
@@ -24,7 +32,7 @@ const App = () => {
         </Routes>
       </main>
       <footer className="terminal__footer">
-        <TerminalOptions completeText={completeText} reset={reset}/>
+        <TerminalOptions completeText={completeText} resetTextStatus={resetTextStatus} setLanguage={setLanguage}/>
       </footer>
 
 		</>

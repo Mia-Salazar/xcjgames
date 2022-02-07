@@ -1,6 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-import Logo from "../../../assets/images/logo.png"
 import ConsoleText from "../../components/atoms/ConsoleText/ConsoleText";
 import "./Help.scss";
 
@@ -15,5 +15,11 @@ export const Help = ({completeState}) => {
 		</>
 	);
 };
+
+Help.propTypes = {
+    complete: PropTypes.bool,
+};
+
+Help.displayName = "Help";
 
 export default Help;
