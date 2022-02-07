@@ -17,6 +17,7 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) =>
         } else {
             navigate(`/${data}`);
         }
+        event.target.reset();
     }
     const handleInputChange = (event) => {
         const value = event.target.value.trim();
@@ -25,7 +26,6 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) =>
         }
         setData(value);
     }
-
     useEffect(() => {
     }, [data]);
 

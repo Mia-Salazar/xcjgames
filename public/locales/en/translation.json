@@ -4,6 +4,10 @@
     },
     "help": {
         "title": "Help",
-        "subtitle": "These are the commands available on XCJ Games\nabout: General information\neducation: Information on education and training \nportfolio: Information on professional and personal projects\nspanish: Change the language to Spanish\nenglish: Change the language to English"
+        "subtitle": "These are the commands available on XCJ Games\nhome: Home\nabout: General information\neducation: Information on education and training \nportfolio: Information on professional and personal projects\nspanish: Change the language to Spanish\nenglish: Change the language to English"
+    },
+    "about" : {
+        "title": "About me",
+        "subtitle": "I'm Carlos Jiménez\nI'm a Gameplay Programmer with strong skills in C++, C#, Unity, Godot and Software architecture. I've developed and published several indie minigames and prototypes on my own as well as collaborating with artists, designers and other programmers.\nI've been playing videogames almost everyday since I was able to grab a controller, which has given me a lot of experience about the mechanics and designs of lots of genres. I'm also a usual pen 'n paper player and game master, as well as a long fan of card and board games.\nMy background working with web technologies helped me develop my coding and interpersonal skills, collaborating with different departments and clients."
     }
 }
