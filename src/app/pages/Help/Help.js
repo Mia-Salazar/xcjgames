@@ -1,16 +1,15 @@
 import React from "react";
 
-import Logo from "../../../assets/images/logo.png"
 import ConsoleText from "../../components/atoms/ConsoleText/ConsoleText";
 import "./Help.scss";
 
-export const Help = ({completeState}) => {
+export const Help = ({completeState, reset}) => {
 	
 	return (
 		<>
 			<section className="help">
-				<ConsoleText text="help.title" complete={completeState}/>
-                <ConsoleText text="help.subtitle" complete={completeState}/>
+				<ConsoleText text="help.title" complete={completeState} reset={reset}/>
+                <ConsoleText text="help.subtitle" complete={completeState} reset={reset}/>
 			</section>
 		</>
 	);
