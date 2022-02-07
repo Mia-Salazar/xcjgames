@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 import "./TerminalOptions.scss";
 
-export const TerminalOptions = ({completeText, resetTextStatus, setLanguage, changeLanguage}) => {
+export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) => {
     const [data, setData] = useState("");
     
     let navigate = useNavigate();
@@ -14,7 +14,6 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage, cha
         if (data === "english" || data === "spanish") {
             const newLanguage = data === 'spanish' ? 'es' : 'en';
             setLanguage(newLanguage);
-            changeLanguage()
         } else {
             navigate(`/${data}`);
         }

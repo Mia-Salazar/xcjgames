@@ -27,8 +27,8 @@ const App = () => {
 		<>
       <main className="terminal__main">         
         <Routes>
-          <Route exact path='/' element={<Home completeState={completeState} resetText={resetText}/>}></Route>
-          <Route exact path='/help' element={<Help completeState={completeState} resetText={resetText}/>}></Route>
+          <Route exact path='/' element={<Home completeState={completeState}/>}></Route>
+          <Route exact path='/help' element={<Help completeState={completeState}/>}></Route>
         </Routes>
       </main>
       <footer className="terminal__footer">
