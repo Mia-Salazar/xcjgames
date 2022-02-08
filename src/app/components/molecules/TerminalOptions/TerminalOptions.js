@@ -6,7 +6,6 @@ import "./TerminalOptions.scss";
 
 export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) => {
     const [data, setData] = useState("");
-    
     let navigate = useNavigate();
     const handleSubmit = (event) => {
         resetTextStatus();
@@ -14,17 +13,20 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) =>
         if (data === "english" || data === "spanish") {
             const newLanguage = data === 'spanish' ? 'es' : 'en';
             setLanguage(newLanguage);
-        } else {
+        } else if (data !== "") {
             navigate(`/${data}`);
         }
+        setData("");
         event.target.reset();
     }
     const handleInputChange = (event) => {
         const value = event.target.value.trim();
-        if (value.length === 1) {
+        setData(value);
+    }
+    const handleKeyDown = (event) => {
+        if (event.keyCode === 13 && data === "") {
             completeText();
         }
-        setData(value);
     }
     useEffect(() => {
     }, [data]);
@@ -34,7 +36,7 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) =>
             <form className="terminal-options__form" onSubmit={handleSubmit}>
                 <label className="terminal-options__label" htmlFor="action"> visitor<span className="terminal-options__greater">{'>'}</span> </label>
                 <input className="terminal-options__input" type="text" id="action"
-                         name="action" autoFocus onChange={handleInputChange}/>
+                         name="action" autoFocus onChange={handleInputChange} onKeyDown={handleKeyDown}/>
             </form>
         </footer>
 	);

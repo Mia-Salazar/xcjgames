@@ -1,6 +1,6 @@
 {
     "home": {
-        "title": "Welcome to XCJ Games\nTo see the complete message press any key\nType the 'help' command to see more information in the bottom bar\nEscriba 'help' para cambiar el idioma"
+        "title": "Welcome to XCJ Games\nTo see the complete message press 'enter'\nType the 'help' command to see more information in the bottom bar\nEscriba 'help' para cambiar el idioma"
     },
     "help": {
         "title": "Help",
