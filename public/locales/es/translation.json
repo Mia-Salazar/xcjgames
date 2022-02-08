@@ -20,5 +20,9 @@
     "portfolio": {
         "title": "Portfolio",
         "subtitle": "Dentro del portfolio puedes consultar los siguientes comandos\npersonal: Consultar los proyectos personales\nprofessional: Consultar los proyectos profesionales"
+    },
+    "professional": {
+        "title": "Professional",
+        "subtitle": "Dentro del portfolio professional puedes consultar los siguientes comandos\nborealmiststudio: Consultar los proyectos de XCJ Games en colaboración con Boreal Mist Studio\npadaonegames: Consultar los proyectos de XCJ Games realizados en PadaOne Games"
     }
 }
