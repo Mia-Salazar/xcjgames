@@ -8,6 +8,7 @@ import TerminalOptions from "./app/components/molecules/TerminalOptions/Terminal
 import Help from "./app/pages/Help/Help";
 import Home from "./app/pages/Home/Home";
 import About from "./app/pages/About/About";
+import Education from "./app/pages/Education/Education";
 
 const App = () => {
   const [completeState, setCompleteState] = useState(false);
@@ -29,6 +30,7 @@ const App = () => {
           <Route exact path='/home' element={<Home completeState={completeState}/>}></Route>
           <Route exact path='/help' element={<Help completeState={completeState}/>}></Route>
           <Route exact path='/about' element={<About completeState={completeState}/>}></Route>
+          <Route exact path='/education' element={<Education completeState={completeState}/>}></Route>
         </Routes>
       </main>
       <footer className="terminal__footer">
