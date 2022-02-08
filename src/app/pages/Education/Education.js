@@ -5,7 +5,6 @@ import ConsoleText from "../../components/atoms/ConsoleText/ConsoleText";
 import "./Education.scss";
 
 export const Education = ({completeState}) => {
-	
 	return (
 		<>
 			<section className="education">

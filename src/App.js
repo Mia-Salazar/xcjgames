@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { withTranslation } from "react-i18next";
-import { Routes,Route } from "react-router-dom";
+import { Routes, Route, Redirect } from "react-router-dom";
 
 import './App.scss';
 import i18n from "./i18n";
@@ -9,6 +9,7 @@ import Help from "./app/pages/Help/Help";
 import Home from "./app/pages/Home/Home";
 import About from "./app/pages/About/About";
 import Education from "./app/pages/Education/Education";
+import MiddlePage from "./app/pages/MiddlePage/MiddlePage";
 
 const App = () => {
   const [completeState, setCompleteState] = useState(false);
@@ -27,10 +28,12 @@ const App = () => {
       <main className="terminal__main">         
         <Routes>
           <Route exact path='/' element={<Home completeState={completeState}/>}></Route>
-          <Route exact path='/home' element={<Home completeState={completeState}/>}></Route>
-          <Route exact path='/help' element={<Help completeState={completeState}/>}></Route>
-          <Route exact path='/about' element={<About completeState={completeState}/>}></Route>
-          <Route exact path='/education' element={<Education completeState={completeState}/>}></Route>
+          <Route path='/home' element={<Home completeState={completeState}/>}></Route>
+          <Route path='/help' element={<Help completeState={completeState}/>}></Route>
+          <Route path='/about' element={<About completeState={completeState}/>}></Route>
+          <Route path='/education' element={<Education completeState={completeState}/>}></Route>
+          <Route path="*" element={<MiddlePage completeState={completeState}/>}></Route>
+          <Route element={<MiddlePage completeState={completeState}/>}></Route>
         </Routes>
       </main>
       <footer className="terminal__footer">
