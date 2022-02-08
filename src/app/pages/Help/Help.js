@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import ConsoleText from "../../components/atoms/ConsoleText/ConsoleText";
-import "./Help.scss";
 
 export const Help = ({completeState}) => {
 	
