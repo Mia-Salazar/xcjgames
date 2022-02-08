@@ -16,5 +16,9 @@
         "course": "Courses",
         "courseOne": "2019-2020\nComplete C# Unity Developer 2D: Learn to Code Making Games\nUdemy\n\n2019\nIntroducing Spring Boot\nUdemy\n\n2019\nMaster Microservices with Spring Boot and Spring Cloud\nUdemy\n\n2019\nDevelopment with Spring Boot - From Zero to Ninja\nUdemy"
     },
-    "404": "404 - Página no encontrada"
+    "404": "404 - Página no encontrada",
+    "portfolio": {
+        "title": "Portfolio",
+        "subtitle": "Within the portfolio you can consult the following commands\npersonal: Consult personal projects\nprofessional: Consult professional projects"
+    }
 }
