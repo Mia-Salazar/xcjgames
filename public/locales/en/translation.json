@@ -20,5 +20,9 @@
     "portfolio": {
         "title": "Portfolio",
         "subtitle": "Within the portfolio you can consult the following commands\npersonal: Consult personal projects\nprofessional: Consult professional projects"
+    },
+    "professional": {
+        "title": "Professional",
+        "subtitle": "Within the professional portfolio you can consult the following commands\nborealmiststudio: Consult XCJ Games projects in collaboration with Boreal Mist Studio\npadaonegames: Consult XCJ Games projects carried out in PadaOne Games"
     }
 }
