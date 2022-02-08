@@ -6,13 +6,17 @@ import ConsoleText from "../../components/atoms/ConsoleText/ConsoleText";
 
 export const MiddlePage = ({completeState}) => {
     const location = useLocation();
-    const route = location.pathname.replace("/");
+    const route = location.pathname.replace("/", "");
+    console.log(location.pathname)
 	
 	return (
 		<>
 			<section className="middle">
-            {route ? (
-                ""
+            {route === "portfolio" ? (
+                <>
+                    <ConsoleText text="portfolio.title" complete={completeState}/>
+                    <ConsoleText text="portfolio.subtitle" complete={completeState}/>
+                </>
             ) : (
                 <ConsoleText text="404" complete={completeState}/>
             )}
