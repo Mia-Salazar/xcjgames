@@ -9,5 +9,11 @@
     "about" : {
         "title": "About me",
         "subtitle": "I'm Carlos Jiménez\nI'm a Gameplay Programmer with strong skills in C++, C#, Unity, Godot and Software architecture. I've developed and published several indie minigames and prototypes on my own as well as collaborating with artists, designers and other programmers.\nI've been playing videogames almost everyday since I was able to grab a controller, which has given me a lot of experience about the mechanics and designs of lots of genres. I'm also a usual pen 'n paper player and game master, as well as a long fan of card and board games.\nMy background working with web technologies helped me develop my coding and interpersonal skills, collaborating with different departments and clients."
+    },
+    "education": {
+        "title": "Education",
+        "titleOne": "2021-2022\nMaster's Degree in Videogame development\nUniversidad Complutense de Madrid\n\n2014-2021\nDegree in Software Engineering\nUniversidad Complutense de Madrid",
+        "course": "Courses",
+        "courseOne": "2019-2020\nComplete C# Unity Developer 2D: Learn to Code Making Games\nUdemy\n\n2019\nIntroducing Spring Boot\nUdemy\n\n2019\nMaster Microservices with Spring Boot and Spring Cloud\nUdemy\n\n2019\nDevelopment with Spring Boot - From Zero to Ninja\nUdemy"
     }
 }
