@@ -15,13 +15,11 @@ export const MiddlePage = ({completeState, language}) => {
             {route === "portfolio"  ? (
                 <>
                     <ConsoleText text="portfolio.title" complete={completeState} language={language}/>
-                    <ConsoleText text="portfolio.subtitle" complete={completeState} language={language}/>
                 </>
             ) : route === "professional" ?
              ( 
                 <>
                 <ConsoleText text="professional.title" complete={completeState} language={language}/>
-                <ConsoleText text="professional.subtitle" complete={completeState} language={language}/>
              </>
              ):
                 <ConsoleText text="404" complete={completeState} language={language}/>

@@ -9,7 +9,6 @@ export const About = ({completeState, language}) => {
 		<>
 			<section className="about">
 				<ConsoleText text="about.title" complete={completeState} language={language}/>
-                <ConsoleText text="about.subtitle" complete={completeState} language={language}/>
 			</section>
 		</>
 	);

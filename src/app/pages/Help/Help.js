@@ -9,7 +9,6 @@ export const Help = ({completeState, language}) => {
 		<>
 			<section className="help">
 				<ConsoleText text="help.title" complete={completeState} language={language}/>
-                <ConsoleText text="help.subtitle" complete={completeState} language={language}/>
 			</section>
 		</>
 	);

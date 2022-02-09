@@ -8,9 +8,6 @@ export const Education = ({completeState, language}) => {
 		<>
 			<section className="education">
 				<ConsoleText text="education.title" complete={completeState} language={language}/>
-                <ConsoleText text="education.titleOne" complete={completeState} language={language}/>
-                <ConsoleText text="education.course" complete={completeState} language={language}/>
-                <ConsoleText text="education.courseOne" complete={completeState} language={language}/>
 			</section>
 		</>
 	);
