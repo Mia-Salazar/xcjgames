@@ -27,13 +27,13 @@ const App = () => {
 		<>
       <main className="terminal__main">         
         <Routes>
-          <Route exact path='/' element={<Home completeState={completeState}/>}></Route>
-          <Route path='/home' element={<Home completeState={completeState}/>}></Route>
-          <Route path='/help' element={<Help completeState={completeState}/>}></Route>
-          <Route path='/about' element={<About completeState={completeState}/>}></Route>
-          <Route path='/education' element={<Education completeState={completeState}/>}></Route>
-          <Route path="*" element={<MiddlePage completeState={completeState}/>}></Route>
-          <Route element={<MiddlePage completeState={completeState}/>}></Route>
+          <Route exact path='/' element={<Home completeState={completeState} language={language}/>}></Route>
+          <Route path='/home' element={<Home completeState={completeState} language={language}/>}></Route>
+          <Route path='/help' element={<Help completeState={completeState} language={language}/>}></Route>
+          <Route path='/about' element={<About completeState={completeState} language={language}/>}></Route>
+          <Route path='/education' element={<Education completeState={completeState} language={language}/>}></Route>
+          <Route path="*" element={<MiddlePage completeState={completeState} language={language}/>}></Route>
+          <Route element={<MiddlePage completeState={completeState} language={language}/>}></Route>
         </Routes>
       </main>
       <footer className="terminal__footer">
