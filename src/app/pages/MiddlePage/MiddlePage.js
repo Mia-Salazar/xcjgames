@@ -12,16 +12,11 @@ export const MiddlePage = ({completeState, language}) => {
 	return (
 		<>
 			<section className="middle">
-            {route === "portfolio"  ? (
+            {route === "portfolio" || route === "professional" ? (
                 <>
-                    <ConsoleText text="portfolio.title" complete={completeState} language={language}/>
+                    <ConsoleText text={`${route}.title`} complete={completeState} language={language}/>
                 </>
-            ) : route === "professional" ?
-             ( 
-                <>
-                <ConsoleText text="professional.title" complete={completeState} language={language}/>
-             </>
-             ):
+            ) :
                 <ConsoleText text="404" complete={completeState} language={language}/>
             }
 				
