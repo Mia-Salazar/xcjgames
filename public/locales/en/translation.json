@@ -17,5 +17,8 @@
     },
     "professional": {
         "title": "Professional\n\nWithin the professional portfolio you can consult the following commands\nborealmiststudio: Consult XCJ Games projects in collaboration with Boreal Mist Studio\npadaonegames: Consult XCJ Games projects carried out in PadaOne Games"
+    },
+    "personal" :{
+        "title": "Personal\n\nWithin the personal portfolio you can consult the following projects\ntreeventure\nplanet\nmetal\ndamng\ndielucard\nfire\noriadris"
     }
 }

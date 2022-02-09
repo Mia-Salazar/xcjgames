@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { useLocation } from "react-router-dom";
 
 import ConsoleText from "../../components/atoms/ConsoleText/ConsoleText";
+import { middleCheck } from "../../utils/middleCheck";
 
 export const MiddlePage = ({completeState, language}) => {
     const location = useLocation();
@@ -12,7 +13,7 @@ export const MiddlePage = ({completeState, language}) => {
 	return (
 		<>
 			<section className="middle">
-            {route === "portfolio" || route === "professional" ? (
+            {middleCheck(route) ? (
                 <>
                     <ConsoleText text={`${route}.title`} complete={completeState} language={language}/>
                 </>
