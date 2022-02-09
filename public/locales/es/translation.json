@@ -20,5 +20,8 @@
     },
     "personal" :{
         "title": "Personal\n\nDentro del portfolio personal se puede consultar los siguientes proyectos\ntreeventure\nplanet\nmetal\ndamng\ndielucard\nfire\noriadris"
+    },
+    "sudo": {
+        "title": "No tienes poder aquí"
     }
 }
