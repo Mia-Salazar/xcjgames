@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 
 import ConsoleText from "../../components/atoms/ConsoleText/ConsoleText";
 
-export const Education = ({completeState}) => {
+export const Education = ({completeState, language}) => {
 	return (
 		<>
 			<section className="education">
-				<ConsoleText text="education.title" complete={completeState}/>
-                <ConsoleText text="education.titleOne" complete={completeState}/>
-                <ConsoleText text="education.course" complete={completeState}/>
-                <ConsoleText text="education.courseOne" complete={completeState}/>
+				<ConsoleText text="education.title" complete={completeState} language={language}/>
+                <ConsoleText text="education.titleOne" complete={completeState} language={language}/>
+                <ConsoleText text="education.course" complete={completeState} language={language}/>
+                <ConsoleText text="education.courseOne" complete={completeState} language={language}/>
 			</section>
 		</>
 	);
@@ -18,6 +18,7 @@ export const Education = ({completeState}) => {
 
 Education.propTypes = {
     complete: PropTypes.bool,
+	language: PropTypes.string,
 };
 
 Education.displayName = "Education";

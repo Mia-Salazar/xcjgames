@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 
 import ConsoleText from "../../components/atoms/ConsoleText/ConsoleText";
 
-export const Help = ({completeState}) => {
+export const Help = ({completeState, language}) => {
 	
 	return (
 		<>
 			<section className="help">
-				<ConsoleText text="help.title" complete={completeState}/>
-                <ConsoleText text="help.subtitle" complete={completeState}/>
+				<ConsoleText text="help.title" complete={completeState} language={language}/>
+                <ConsoleText text="help.subtitle" complete={completeState} language={language}/>
 			</section>
 		</>
 	);
@@ -17,6 +17,7 @@ export const Help = ({completeState}) => {
 
 Help.propTypes = {
     complete: PropTypes.bool,
+	language: PropTypes.string,
 };
 
 Help.displayName = "Help";

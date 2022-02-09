@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 
 import ConsoleText from "../../components/atoms/ConsoleText/ConsoleText";
 
-export const MiddlePage = ({completeState}) => {
+export const MiddlePage = ({completeState, language}) => {
     const location = useLocation();
     const route = location.pathname.replace("/", "");
     useEffect(() => {
@@ -14,17 +14,17 @@ export const MiddlePage = ({completeState}) => {
 			<section className="middle">
             {route === "portfolio"  ? (
                 <>
-                    <ConsoleText text="portfolio.title" complete={completeState}/>
-                    <ConsoleText text="portfolio.subtitle" complete={completeState}/>
+                    <ConsoleText text="portfolio.title" complete={completeState} language={language}/>
+                    <ConsoleText text="portfolio.subtitle" complete={completeState} language={language}/>
                 </>
             ) : route === "professional" ?
              ( 
                 <>
-                <ConsoleText text="professional.title" complete={completeState}/>
-                <ConsoleText text="professional.subtitle" complete={completeState}/>
+                <ConsoleText text="professional.title" complete={completeState} language={language}/>
+                <ConsoleText text="professional.subtitle" complete={completeState} language={language}/>
              </>
              ):
-                <ConsoleText text="404" complete={completeState}/>
+                <ConsoleText text="404" complete={completeState} language={language}/>
             }
 				
 			</section>
@@ -34,6 +34,7 @@ export const MiddlePage = ({completeState}) => {
 
 MiddlePage.propTypes = {
     complete: PropTypes.bool,
+    language: PropTypes.string,
 };
 
 MiddlePage.displayName = "MiddlePage";
