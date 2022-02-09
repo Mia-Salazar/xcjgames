@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 
 import ConsoleText from "../../components/atoms/ConsoleText/ConsoleText";
 import { middleCheck } from "../../utils/middleCheck";
+import { detailCheck } from "../../utils/detailCheck";
 
 export const MiddlePage = ({completeState, language}) => {
     const location = useLocation();
@@ -14,6 +15,10 @@ export const MiddlePage = ({completeState, language}) => {
 		<>
 			<section className="middle">
             {middleCheck(route) ? (
+                <>
+                    <ConsoleText text={`${route}.title`} complete={completeState} language={language}/>
+                </>
+            ) : detailCheck(route) ? (
                 <>
                     <ConsoleText text={`${route}.title`} complete={completeState} language={language}/>
                 </>
