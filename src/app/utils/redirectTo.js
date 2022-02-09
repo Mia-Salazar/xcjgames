@@ -12,6 +12,9 @@ export const redirectTo = (comand) => {
         case "github":
             window.open("https://github.com/XCJGames", "_blank");
             break;
+        case "mia":
+            window.open("https://miasalazar.netlify.app/", "_blank");
+            break;
         default:
             window.location = "mailto:carlosjimenez@xcjgames.com";
     }
