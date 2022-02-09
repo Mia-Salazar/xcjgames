@@ -21,7 +21,7 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) =>
         event.target.reset();
     }
     const handleInputChange = (event) => {
-        const value = event.target.value.trim();
+        const value = event.target.value.trim().toLowerCase();
         setData(value);
     }
     const handleKeyDown = (event) => {
