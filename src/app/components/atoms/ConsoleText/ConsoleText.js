@@ -23,11 +23,11 @@ export const ConsoleText = ({text, complete = false, language}) => {
     }, [translatedText, currentText, complete]);
     useEffect(() => {
         index.current = 0;
-        setCurrentText('');
+        setCurrentText("");
     }, [text, language]);
 	return (
         <p className="console-text">
-            <span className="console-text__more"> {'>'} </span>
+            <span className="console-text__more"> {">"} </span>
             {currentText}
         </p>
 	);
