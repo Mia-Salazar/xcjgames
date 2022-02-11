@@ -1,26 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import "./InputContent.scss";
-import { predictInput } from "../../../utils/predictComand";
 import PredictText from "../../atoms/PredictText/PredictText";
 
-export const InputContent = ({input}) => {
-    const [data, setData] = useState("");
-    
-    useEffect(() => {
-        setData(predictInput(input));
-    }, [input]);
+export const InputContent = ({input, predict}) => {
 	return (
         <div className="input-content">
             <p className="input-content__text">{input}</p>
-            <PredictText text={data}/>
+            <PredictText text={predict}/>
         </div>
 	);
 };
 
 InputContent.propTypes = {
 	input: PropTypes.string.isRequired,
+    predict: PropTypes.string
 };
 
 InputContent.displayName = "InputContent";

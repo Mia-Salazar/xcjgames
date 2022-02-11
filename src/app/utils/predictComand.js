@@ -5,9 +5,13 @@ export const predictInput = (input) => {
         const list = comandsList;
         var regex = new RegExp("^" + input, "ig");
         const found = list.find(element => regex.test(element));
-        const inputLength = input.length;
-        const tipRestOfText = found.substring(inputLength);
-        return found ? tipRestOfText : "";
+        if (found) {
+            const inputLength = input.length;
+            const tipRestOfText = found.substring(inputLength);
+            return tipRestOfText;
+        } else {
+            return "";
+        }
     } else {
         return "";
     }
