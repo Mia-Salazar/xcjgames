@@ -11,13 +11,6 @@ export const Home = ({completeState, language}) => {
 		<>
 			<section className="home">
 				<ConsoleText text="home.title" complete={completeState} language={language} />
-				<ConsoleText text="home.title" complete={completeState} language={language} />
-				<ConsoleText text="home.title" complete={completeState} language={language} />
-				<ConsoleText text="home.title" complete={completeState} language={language} />
-				<ConsoleText text="home.title" complete={completeState} language={language} />
-				<ConsoleText text="home.title" complete={completeState} language={language} />
-				<ConsoleText text="home.title" complete={completeState} language={language} />
-				<ConsoleText text="home.title" complete={completeState} language={language} />
 				<figure className="home__figure">
 					<img className="home__image" alt="" src={Logo}/>
 				</figure>
