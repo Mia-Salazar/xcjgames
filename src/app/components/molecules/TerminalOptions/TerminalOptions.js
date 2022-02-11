@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 
 import "./TerminalOptions.scss";
-import { ActionChecker } from "../../../utils/actionChecker";
+import { actionChecker } from "../../../utils/actionChecker";
+import { predictInput } from "../../../utils/predictComand";
 
 export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) => {
     const [data, setData] = useState("");
@@ -15,13 +16,14 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) =>
             const newLanguage = data === "spanish" ? "es" : "en";
             setLanguage(newLanguage);
         } else {
-            ActionChecker(data, navigate);
+            actionChecker(data, navigate);
         }
         setData("");
         event.target.reset();
     }
     const handleInputChange = (event) => {
         const value = event.target.value.trim().toLowerCase();
+        predictInput(value);
         setData(value);
     }
     const handleKeyDown = (event) => {
