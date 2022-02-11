@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { withTranslation } from "react-i18next";
-import { Routes, Route, Redirect } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import "./App.scss";
 import i18n from "./i18n";
-import TerminalOptions from "./app/components/molecules/TerminalOptions/TerminalOptions";
+import TerminalOptions from "./app/components/organisms/TerminalOptions/TerminalOptions";
 import Help from "./app/pages/Help/Help";
 import Home from "./app/pages/Home/Home";
 import About from "./app/pages/About/About";
