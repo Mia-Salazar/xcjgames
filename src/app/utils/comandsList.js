@@ -1,11 +1,14 @@
 export const comandsList = [
+    "about",
     "boreal",
     "damng",
     "dielucard",
+    "education",
     "email",
     "fire",
     "github",
     "help",
+    "home",
     "i-am-your-father",
     "linkedin",
     "metal",
@@ -17,6 +20,7 @@ export const comandsList = [
     "personal",
     "planet",
     "sudo",
+    "spanish",
     "treeventure",
     "twitter",
 ];
