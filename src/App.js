@@ -39,7 +39,6 @@ const App = () => {
       <footer className="terminal__footer">
         <TerminalOptions completeText={completeText} resetTextStatus={resetTextStatus} setLanguage={setLanguage}/>
       </footer>
-
 		</>
   );
 }
