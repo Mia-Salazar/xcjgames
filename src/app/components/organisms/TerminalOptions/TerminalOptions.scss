@@ -1,16 +1,16 @@
 @import "../../../../assets/stylesheets/settings/variables";
 
 .terminal-options {
-    height: 10vh;
-    position: sticky;
-    bottom: 0;
-    background-color: $black;
+    height: 100%;
+    display: flex;
+    padding: 0 10px;
 
-    @media (min-width: 768px) {
-      height: 5vh;
-    }
-    
     &__form {
+        height: 100%;
+        position: relative;
+    }
+
+    &__input-container {
         height: 100%;
         display: flex;
         align-items: center;
@@ -31,13 +31,14 @@
     }
 
     &__input {
+        width: calc(100% - 20px);
         height: 100%;
         display: flex;
         flex-grow: 1;
-        padding-left: 10px;
+        position: absolute;
         background-color: transparent;
         border: none;
-        color: $primary-color;
+        color: transparent;
     }
 
 }

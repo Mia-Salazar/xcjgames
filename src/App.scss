@@ -1,11 +1,12 @@
 @import "./assets/stylesheets/styles.scss";
 
 .terminal__main {
-  height: 90vh;
+  height: calc(90vh - 10px);
   padding: 10px;
+  overflow-y: hidden;
 
   @media (min-width: 768px) {
-    height: 95vh;
+    height: calc(95vh - 10px);
   }
 }
 
@@ -14,7 +15,6 @@
   position: sticky;
   bottom: 0;
   background-color: $black;
-  padding: 0 10px;
 
   @media (min-width: 768px) {
     height: 5vh;
