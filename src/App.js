@@ -14,6 +14,7 @@ import MiddlePage from "./app/pages/MiddlePage/MiddlePage";
 const App = () => {
   const [completeState, setCompleteState] = useState(false);
   const [language, setLanguage] = useState("en");
+  const [name, setName] = useState("visitor");
   const completeText = () => {
     setCompleteState(!completeState);
   }
@@ -37,7 +38,7 @@ const App = () => {
         </Routes>
       </main>
       <footer className="terminal__footer">
-        <TerminalOptions completeText={completeText} resetTextStatus={resetTextStatus} setLanguage={setLanguage}/>
+        <TerminalOptions completeText={completeText} resetTextStatus={resetTextStatus} setLanguage={setLanguage} name={name} setName={setName}/>
       </footer>
 		</>
   );

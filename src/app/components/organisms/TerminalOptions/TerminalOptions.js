@@ -8,7 +8,7 @@ import { predictInput } from "../../../utils/predictCommand";
 import { actionChecker } from "../../../utils/actionChecker";
 import InputContent from "../../molecules/InputContent/InputContent";
 
-export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) => {
+export const TerminalOptions = ({completeText, resetTextStatus, setLanguage, name = "visitor", setName}) => {
     const [data, setData] = useState("");
     const [predict, setPredict] = useState("");
     const [hasSpace, setHasSpace] = useState(false);
@@ -20,6 +20,10 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) =>
         if (data === "english" || data === "spanish") {
             const newLanguage = data === "spanish" ? "es" : "en";
             setLanguage(newLanguage);
+        } else if (data.includes("name") && data.includes(" ")) {
+            const space = data.indexOf(" ");
+            const name = data.substring(space + 1)
+            changeName(name.trim());
         } else {
             actionChecker(data, navigate);
         }
@@ -28,6 +32,9 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) =>
     const handleInputChange = (event) => {
         const value = event.target.value.trimStart().toLowerCase();
         setData(value);
+    }
+    const changeName = (name) => {
+        setName(name);
     }
     const handleKeyDown = (event) => {
         if (event.keyCode === 13 && data === "") {
@@ -55,7 +62,7 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) =>
 	return (
         <form className="terminal-options" onSubmit={handleSubmit}>
             <div className="terminal-options__input-container">
-                <label className="terminal-options__label" htmlFor="action"> visitor<span className="terminal-options__greater">{">"}</span> </label>
+                <label className="terminal-options__label" htmlFor="action">{name}<span className="terminal-options__greater">{">"}</span> </label>
                 <InputContent input={data} predict={predict} hasSpace={hasSpace}/>
             </div>
             <input className="terminal-options__input" type="text" id="action" ref={inputRef} value={data}
@@ -69,6 +76,8 @@ TerminalOptions.propTypes = {
 	completeText: PropTypes.func.isRequired,
     setLanguage: PropTypes.func.isRequired,
     resetTextStatus: PropTypes.func.isRequired,
+    name: PropTypes.string,
+    setName: PropTypes.func
 };
 
 TerminalOptions.displayName = "TerminalOptions";

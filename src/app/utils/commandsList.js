@@ -20,6 +20,7 @@ export const commandsList = [
     "metal",
     "metal web",
     "mia",
+    "name",
     "oriadris",
     "oriadris play",
     "portfolio",
