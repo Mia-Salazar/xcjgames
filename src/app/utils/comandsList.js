@@ -1,6 +1,7 @@
 export const comandsList = [
     "about",
     "boreal",
+    "current",
     "damng",
     "dielucard",
     "education",
