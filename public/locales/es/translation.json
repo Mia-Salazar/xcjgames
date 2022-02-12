@@ -3,7 +3,7 @@
         "title": "Te damos la bienvenida a XCJ Games\n\nPara ver el mensaje completo pulse 'enter'\nEscriba el comando 'help' para consultar más información en la barra inferior\nWrite 'help' to change language"
     },
     "help": {
-        "title": "Ayuda\n\nEstos son los comandos disponibles sobre XCJ Games\nhome: Inicio\nabout: Información general\neducation: Información sobre la educación y formación \nportfolio: Información sobre los proyectos profesionales y personales\nspanish: Cambiar el idioma a español\nenglish: Cambiar el idioma a inglés\nmia: Conozca a la desarrolladora que ha hecho esta web"
+        "title": "Ayuda\n\nEstos son los comandos disponibles sobre XCJ Games\nhome: Inicio\nabout: Información general\neducation: Información sobre la educación y formación \nportfolio: Información sobre los proyectos profesionales y personales\ncurrent: Los proyectos y la formación en curso de XCJ Games\nspanish: Cambiar el idioma a español\nenglish: Cambiar el idioma a inglés\nmia: Conozca a la desarrolladora que ha hecho esta web"
     },
     "about" : {
         "title": "Sobre mí\n\nSoy Carlos Jiménez\nSoy un programador de juegos con fuertes habilidades en C ++, C #, Unity, Godot y arquitectura de software. He desarrollado y publicado varios minijuegos y prototipos independientes por mi cuenta, además de colaborar con artistas, diseñadores y otros programadores.\nHe estado jugando videojuegos casi todos los días desde que pude agarrar un controlador, lo que me ha dado mucha experiencia sobre la mecánica y los diseños de muchos géneros. También soy un jugador habitual de lápiz y papel y un maestro del juego, así como un gran fanático de los juegos de cartas y de mesa.\nMi experiencia trabajando con tecnologías web me ayudó a desarrollar mis habilidades interpersonales y de codificación, colaborando con diferentes departamentos y clientes.\n\nContacto\nPara contactar existen los siguientes comandos\nemail: Se enviará un email\nlinkedin: Se redirigirá a Linkedin\ntwitter: Se redirigirá a Twitter\ngithub: Se redirigirá a GitHub"
@@ -27,5 +27,8 @@
     "i-am-your-father": {
         "title": "Noooooooooooooooooooooooooooooooooooooooooooooooo"
     },
-    "send": "Enviar"
+    "send": "Enviar",
+    "current": {
+        "title": "Proyectos y formación en proceso\n\nActualmente XCJ Games está realizando los siguiente proyectos y la siguiente formación\n\n2021-2022\nMaster en Programación de Videojuegos\nUniversidad Complutense de Madrid\n\n09-2021\nProgramador Junior\nPadaOne Games"
+    }
 }
