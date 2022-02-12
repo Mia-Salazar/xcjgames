@@ -6,7 +6,7 @@
         "title": "Ayuda\n\nEstos son los comandos disponibles sobre XCJ Games\nhome: Inicio\nabout: Información general\neducation: Información sobre la educación y formación \nportfolio: Información sobre los proyectos profesionales y personales\ncurrent: Los proyectos y la formación en curso de XCJ Games\nspanish: Cambiar el idioma a español\nenglish: Cambiar el idioma a inglés\nmia: Conozca a la desarrolladora que ha hecho esta web"
     },
     "about" : {
-        "title": "Sobre mí\n\nSoy Carlos Jiménez\nSoy un programador de juegos con fuertes habilidades en C ++, C #, Unity, Godot y arquitectura de software. He desarrollado y publicado varios minijuegos y prototipos independientes por mi cuenta, además de colaborar con artistas, diseñadores y otros programadores.\nHe estado jugando videojuegos casi todos los días desde que pude agarrar un controlador, lo que me ha dado mucha experiencia sobre la mecánica y los diseños de muchos géneros. También soy un jugador habitual de lápiz y papel y un maestro del juego, así como un gran fanático de los juegos de cartas y de mesa.\nMi experiencia trabajando con tecnologías web me ayudó a desarrollar mis habilidades interpersonales y de codificación, colaborando con diferentes departamentos y clientes.\n\nContacto\nPara contactar existen los siguientes comandos\nemail: Se enviará un email\nlinkedin: Se redirigirá a Linkedin\ntwitter: Se redirigirá a Twitter\ngithub: Se redirigirá a GitHub"
+        "title": "Sobre mí\n\nSoy Carlos Jiménez\nSoy un programador de juegos con fuertes habilidades en C ++, C #, Unity, Godot y arquitectura de software. He desarrollado y publicado varios minijuegos y prototipos independientes por mi cuenta, además de colaborar con artistas, diseñadores y otros programadores\nHe estado jugando videojuegos casi todos los días desde que pude agarrar un controlador, lo que me ha dado mucha experiencia sobre la mecánica y los diseños de muchos géneros. También soy un jugador habitual de lápiz y papel y un maestro del juego, así como un gran fanático de los juegos de cartas y de mesa\nMi experiencia trabajando con tecnologías web me ayudó a desarrollar mis habilidades interpersonales y de codificación, colaborando con diferentes departamentos y clientes\n\nContacto\nPara contactar existen los siguientes comandos\nemail: Se enviará un email\nlinkedin: Se redirigirá a Linkedin\ntwitter: Se redirigirá a Twitter\ngithub: Se redirigirá a GitHub"
     },
     "education": {
         "title": "Formación\n\n2021-2022\nMaster en Programación de Videojuegos\nUniversidad Complutense de Madrid\n\n2014-2021\nGrado en Ingeniería de Software\nUniversidad Complutense de Madrid\n\nCursos\n\n2021\nAdvanced AI for Games with Behaviour Trees\nHolistic3D\n\n2019-2020\nComplete C# Unity Developer 2D: Learn to Code Making Games\nUdemy\n\n2019\nIntroducing Spring Boot\nUdemy"
@@ -36,5 +36,26 @@
     },
     "padaone": {
         "title": "PadaOne Game\n\nJunior Programmer\n\nInserte el siguiente comando para conocer más información sobre esta experiencia laboral\npadaone web: Visitar la página web de PadaOne Games"
+    },
+    "metal": {
+        "title": "Metal Slug\n\nClon de Metal Slug hecho con tecnologías web y Quintus.js\nInserte el siguiente comando para obtener más información sobre este proyecto\nmetal web: Jugar juego"
+    },
+    "planet": {
+        "title": "Planet Born\n\n¡Crea tu propio planeta mezclando diferentes tipos de asteroides y evitando impactos! Presentación para el JamOn 2021\nInserte el siguiente comando para obtener más información sobre este proyecto\nplanet web: Jugar juego"
+    },
+    "treeventure": {
+        "title": "Treeventure\n\n¡Simulador de granja de árboles de Navidad, con un toque ecológico y aterrador!\nInserte el siguiente comando para obtener más información sobre este proyecto\ntreeventure web: Jugar juego"
+    },
+    "damng": {
+        "title": "Damng!: La balada del capitán\n\nJuego táctico por turnos inspirado en juegos como XCOM o Battle Brothers. Ayuda a una banda de sinvergüenzas a vengarse de la muerte de su antiguo capitán. Inscripción para el Spain Game Devs Jam II\nInserte el siguiente comando para obtener más información sobre este proyecto\ndamng web: Jugar juego"
+    },
+    "dielucard": {
+        "title": "The Grand Escape of Dielucard\n\nJuego de plataformas n2D en el que controlas a Dielucard, un guerrero Dhampir, y lo ayudas a escapar de una mazmorra.\nInserte el siguiente comando para obtener más información sobre este proyecto\ndielucard web: Jugar juego"
+    },
+    "fire": {
+        "title": "Line of Fire: Strategic Defense\n\nClon de Plants vs Zombies con un estilo sci-fi / distópico\nInserte el siguiente comando para obtener más información sobre este proyecto\nfire web: Jugar juego\nfire play: Jugar juego en la Play Store"
+    },
+    "oriadris": {
+        "title": "Dragon Attack: Skies of Oriadris\n\nConsigue la puntuación más alta que puedas lograr en este juego de disparos de arcade con vista cenital\noriadris play: Jugar juego en la Play Store"
     }
 }

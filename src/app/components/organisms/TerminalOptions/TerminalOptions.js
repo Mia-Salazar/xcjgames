@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import "./TerminalOptions.scss";
 import i18n from "../../../../i18n";
-import { predictInput } from "../../../utils/predictComand";
+import { predictInput } from "../../../utils/predictCommand";
 import { actionChecker } from "../../../utils/actionChecker";
 import InputContent from "../../molecules/InputContent/InputContent";
 
