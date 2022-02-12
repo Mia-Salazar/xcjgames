@@ -8,7 +8,12 @@ export const predictInput = (input) => {
         if (found) {
             const inputLength = input.length;
             const tipRestOfText = found.substring(inputLength);
-            return tipRestOfText;
+            if (input.includes(" ") && input[inputLength - 1] === " ") {
+                const final = [tipRestOfText];
+                return final;
+            } else {
+                return tipRestOfText;
+            }
         } else {
             return "";
         }

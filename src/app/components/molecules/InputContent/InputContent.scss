@@ -3,4 +3,10 @@
 .input-content {
     display: flex;
     color: $primary-color;
+
+    &__text {
+        &--has-space {
+            padding-right: 10px;
+        }
+    }
 }

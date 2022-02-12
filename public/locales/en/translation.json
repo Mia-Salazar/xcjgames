@@ -30,5 +30,11 @@
     "send": "Send",
     "current": {
         "title": "Projects and training in process\n\nCurrently XCJ Games is carrying out the following projects and training\n\n2021-2022\nMaster's Degree in Videogame development\nUniversidad Complutense de Madrid\n\n09-2021\nJunior Programmer\nPadaOne Games"
+    },
+    "boreal": {
+        "title": "Boreal Mist Studios\n\nMain Programmer\nProject Apax\n\nInsert the following comand for more information about this Job Position\nboreal apax: Visit the webpase of Project Apax"
+    },
+    "padaone": {
+        "title": "PadaOne Game\n\nJunior Programmer\n\nInsert the following comand for more information about this Job Position\npadaone web: Visit the webpase of PadaOne Games"
     }
 }

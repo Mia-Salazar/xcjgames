@@ -1,6 +1,7 @@
 export const comandsList = [
     "about",
     "boreal",
+    "boreal apax",
     "current",
     "damng",
     "dielucard",
@@ -18,6 +19,7 @@ export const comandsList = [
     "portfolio",
     "professional",
     "padaone",
+    "padaone web",
     "personal",
     "planet",
     "sudo",
