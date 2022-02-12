@@ -16,18 +16,28 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage, nam
     let navigate = useNavigate();
     const handleSubmit = (event) => {
         event.preventDefault();
-        resetTextStatus();
-        if (data === "english" || data === "spanish") {
-            const newLanguage = data === "spanish" ? "es" : "en";
-            setLanguage(newLanguage);
-        } else if (data.includes("name") && data.includes(" ")) {
-            const space = data.indexOf(" ");
-            const name = data.substring(space + 1)
-            changeName(name.trim());
+        const regex = new RegExp("^(?!.*<[^>]+>).*", "ig");
+        if (regex.test(data)) {
+            resetTextStatus();
+            if (data === "english" || data === "spanish") {
+                const newLanguage = data === "spanish" ? "es" : "en";
+                setLanguage(newLanguage);
+            } else if (data.includes("name") && data.includes(" ")) {
+                const space = data.indexOf(" ");
+                const name = data.substring(space + 1)
+                if (name.length > 20) {
+                    navigate(`/error`);
+                } else {
+                    changeName(name.trim());
+                }
+            } else {
+                actionChecker(data, navigate);
+            }
+            setData("");
         } else {
-            actionChecker(data, navigate);
+            navigate(`/error`);
         }
-        setData("");
+
     }
     const handleInputChange = (event) => {
         const value = event.target.value.trimStart().toLowerCase();

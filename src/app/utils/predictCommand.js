@@ -3,7 +3,7 @@ import { commandsList } from "./commandsList";
 export const predictInput = (input) => {
     if (input !== "") {
         const list = commandsList;
-        var regex = new RegExp("^" + input, "ig");
+        const regex = new RegExp("^" + input, "ig");
         const found = list.find(element => regex.test(element));
         if (found) {
             const inputLength = input.length;
