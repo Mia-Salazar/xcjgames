@@ -30,5 +30,11 @@
     "send": "Enviar",
     "current": {
         "title": "Proyectos y formación en proceso\n\nActualmente XCJ Games está realizando los siguiente proyectos y la siguiente formación\n\n2021-2022\nMaster en Programación de Videojuegos\nUniversidad Complutense de Madrid\n\n09-2021\nProgramador Junior\nPadaOne Games"
+    },
+    "boreal": {
+        "title": "Boreal Mist Studios\n\nProgramador principal\nProject Apax\n\nInserte el siguiente comando para conocer más información sobre esta experiencia laboral\nboreal apax: Visitar la página web de Project Apax"
+    },
+    "padaone": {
+        "title": "PadaOne Game\n\nJunior Programmer\n\nInserte el siguiente comando para conocer más información sobre esta experiencia laboral\npadaone web: Visitar la página web de PadaOne Games"
     }
 }

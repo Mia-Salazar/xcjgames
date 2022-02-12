@@ -11,6 +11,7 @@ import InputContent from "../../molecules/InputContent/InputContent";
 export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) => {
     const [data, setData] = useState("");
     const [predict, setPredict] = useState("");
+    const [hasSpace, setHasSpace] = useState(false);
     const inputRef = useRef(null);
     let navigate = useNavigate();
     const handleSubmit = (event) => {
@@ -25,7 +26,7 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) =>
         setData("");
     }
     const handleInputChange = (event) => {
-        const value = event.target.value.trim().toLowerCase();
+        const value = event.target.value.toLowerCase();
         setData(value);
     }
     const handleKeyDown = (event) => {
@@ -37,8 +38,15 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) =>
             setPredict("");
         }
     }
-    useEffect(() => { 
-        setPredict(predictInput(data));
+    useEffect(() => {
+        const predicted = predictInput(data);
+        if (Array.isArray(predicted)){
+            setHasSpace(true);
+            setPredict(predicted[0]);
+        } else {
+            setHasSpace(false);
+            setPredict(predicted);
+        } 
     }, [data]);
     useEffect(() => {         
         inputRef.current.focus();
@@ -48,7 +56,7 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage}) =>
         <form className="terminal-options" onSubmit={handleSubmit}>
             <div className="terminal-options__input-container">
                 <label className="terminal-options__label" htmlFor="action"> visitor<span className="terminal-options__greater">{">"}</span> </label>
-                <InputContent input={data} predict={predict}/>
+                <InputContent input={data} predict={predict} hasSpace={hasSpace}/>
             </div>
             <input className="terminal-options__input" type="text" id="action" ref={inputRef} value={data}
                     name="action" autoFocus onChange={handleInputChange} onKeyDown={handleKeyDown}/>

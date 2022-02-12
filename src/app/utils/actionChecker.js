@@ -1,7 +1,7 @@
 import { redirectTo }  from "./redirectTo";
 
 export const actionChecker = (data, navigate) => {
-    const external = ["email", "linkedin", "twitter", "github", "mia"];
+    const external = ["email", "linkedin", "twitter", "github", "mia", "boreal apax", "padaone web"];
     const hasHyphen = data.includes(" ");
     if (data !== "") {
         const externalFound = external.indexOf(data);

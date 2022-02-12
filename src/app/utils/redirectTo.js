@@ -15,6 +15,12 @@ export const redirectTo = (comand) => {
         case "mia":
             window.open("https://miasalazar.netlify.app/", "_blank");
             break;
+        case "boreal apax":
+            window.open("https://apaxthegame.com/", "_blank");
+            break;
+        case "padaone web":
+            window.open("http://www.padaonegames.com/", "_blank");
+            break;
         default:
             window.location = "mailto:carlosjimenez@xcjgames.com";
     }
