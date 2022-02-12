@@ -12,6 +12,9 @@
         "title": "Education\n\n2021-2022\nMaster's Degree in Videogame development\nUniversidad Complutense de Madrid\n\n2014-2021\nDegree in Software Engineering\nUniversidad Complutense de Madrid\n\nCourses\n\n2021\nAdvanced AI for Games with Behaviour Trees\nHolistic3D\n\n2019-2020\nComplete C# Unity Developer 2D: Learn to Code Making Games\nUdemy"
     },
     "404": "404 - Página no encontrada",
+    "error": {
+        "title": "You can't perform this action"
+    },
     "portfolio": {
         "title": "Portfolio\n\nWithin the portfolio you can consult the following commands\npersonal: Consult personal projects\nprofessional: Consult professional projects"
     },
