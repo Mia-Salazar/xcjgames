@@ -1,12 +1,12 @@
-import padaone from "../../assets/images/padaone.PNG";
-import boreal from "../../assets/images/apax.PNG";
-import damng from "../../assets/images/damng.PNG";
-import dielucard from "../../assets/images/dielucard.PNG";
-import oriadris from "../../assets/images/dragon.PNG";
-import fire from "../../assets/images/fire.PNG";
-import metal from "../../assets/images/metal.PNG";
-import planet from "../../assets/images/planet.PNG";
-import treeventure from "../../assets/images/treeventure.PNG";
+import padaone from "../../../assets/images/padaone.PNG";
+import boreal from "../../../assets/images/apax.PNG";
+import damng from "../../../assets/images/damng.PNG";
+import dielucard from "../../../assets/images/dielucard.PNG";
+import oriadris from "../../../assets/images/dragon.PNG";
+import fire from "../../../assets/images/fire.PNG";
+import metal from "../../../assets/images/metal.PNG";
+import planet from "../../../assets/images/planet.PNG";
+import treeventure from "../../../assets/images/treeventure.PNG";
 
 export const imageForProject = (page) => {
     let result;

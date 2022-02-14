@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 import "./TerminalOptions.scss";
 import i18n from "../../../../i18n";
-import { predictInput } from "../../../utils/predictCommand";
-import { actionChecker } from "../../../utils/actionChecker";
+import { predictInput } from "../../../utils/functionalities/predictCommand";
+import { actionChecker } from "../../../utils/functionalities/actionChecker";
 import InputContent from "../../molecules/InputContent/InputContent";
 
 export const TerminalOptions = ({completeText, resetTextStatus, setLanguage, name = "visitor", setName}) => {
