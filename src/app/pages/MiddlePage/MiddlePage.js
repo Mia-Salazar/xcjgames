@@ -4,9 +4,9 @@ import { useLocation } from "react-router-dom";
 
 import "./MiddlePage.scss";
 import ConsoleText from "../../components/atoms/ConsoleText/ConsoleText";
-import { middleCheck } from "../../utils/middleCheck";
-import { projectsCheck } from "../../utils/projectsCheck";
-import { imageForProject } from "../../utils/imageForProject";
+import { middleCheck } from "../../utils/functionalities/middleCheck";
+import { projectsCheck } from "../../utils/functionalities/projectsCheck";
+import { imageForProject } from "../../utils/functionalities/imageForProject";
 
 export const MiddlePage = ({completeState, language}) => {
     const location = useLocation();
