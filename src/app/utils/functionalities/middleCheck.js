@@ -1,4 +1,4 @@
-import { middleCheckList } from "../data/commandsListPriority";
+import { middleCheckList } from "../data/commandsList";
 
 export const middleCheck = (route) => {
     const externalFound = middleCheckList.indexOf(route);

@@ -1,4 +1,4 @@
-import { actionList } from "../data/commandsListPriority";
+import { actionList } from "../data/commandsList";
 import { redirectTo }  from "./redirectTo";
 
 export const actionChecker = (data, navigate) => {

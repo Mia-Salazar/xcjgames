@@ -1,4 +1,4 @@
-import { projectsList } from "../data/commandsListPriority";
+import { projectsList } from "../data/commandsList";
 
 export const projectsCheck = (route) => {
     const externalFound = projectsList.indexOf(route);
