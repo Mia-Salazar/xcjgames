@@ -2,4 +2,8 @@
 
 .predict-text {
     color: $primary-color-light;
+
+    @media (max-width: 475px) {
+        font-size: 14px;
+    }
 }

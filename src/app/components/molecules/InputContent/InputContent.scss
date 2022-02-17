@@ -3,8 +3,13 @@
 .input-content {
     display: flex;
     color: $primary-color;
+    word-break: break-all;
 
     &__text {
+        @media (max-width: 475px) {
+            font-size: 14px;
+        }
+
         &--has-space {
             padding-right: 10px;
         }

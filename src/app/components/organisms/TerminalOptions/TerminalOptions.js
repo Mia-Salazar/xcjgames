@@ -25,7 +25,7 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage, nam
             } else if (data.includes("name") && data.includes(" ")) {
                 const space = data.indexOf(" ");
                 const name = data.substring(space + 1)
-                if (name.length > 20) {
+                if (name.length > 10) {
                     navigate(`/error`);
                 } else {
                     changeName(name.trim());
@@ -41,7 +41,12 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage, nam
     }
     const handleInputChange = (event) => {
         const value = event.target.value.trimStart().toLowerCase();
-        setData(value);
+        console.log(value.length)
+        if (value.length >= 120) {
+            setData("");
+        } else {
+            setData(value);
+        }
     }
     const changeName = (name) => {
         setName(name);
