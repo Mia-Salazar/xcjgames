@@ -11,7 +11,7 @@
     "education": {
         "title": "Education\n\n2021-2022\nMaster's Degree in Videogame development\nUniversidad Complutense de Madrid\n\n2014-2021\nDegree in Software Engineering\nUniversidad Complutense de Madrid\n\nCourses\n\n2021\nAdvanced AI for Games with Behaviour Trees\nHolistic3D\n\n2019-2020\nComplete C# Unity Developer 2D: Learn to Code Making Games\nUdemy\n\n2021\nCertificate in Proficiency In English (CPE - C2)\nUniversity of Cambridge"
     },
-    "404": "404 - Página no encontrada",
+    "404": "Unknown command\n\nTo see a list of supported commands, run:\nhelp",
     "error": {
         "title": "You can't perform this action"
     },
