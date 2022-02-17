@@ -11,7 +11,7 @@
     "education": {
         "title": "Formación\n\n2021-2022\nMaster en Programación de Videojuegos\nUniversidad Complutense de Madrid\n\n2014-2021\nGrado en Ingeniería de Software\nUniversidad Complutense de Madrid\n\nCursos\n\n2021\nAdvanced AI for Games with Behaviour Trees\nHolistic3D\n\n2019-2020\nComplete C# Unity Developer 2D: Learn to Code Making Games\nUdemy\n\n2019\nIntroducing Spring Boot\nUdemy\n\n2021\nCertificate in Proficiency In English (CPE - C2)\nUniversity of Cambridge"
     },
-    "404": "404 - Not Found",
+    "404": "Comando desconocido\n\nPara ver una lista de comandos admitidos, ejecute:\nayuda",
     "error": {
         "title": "No puede realizar esta acción"
     },
