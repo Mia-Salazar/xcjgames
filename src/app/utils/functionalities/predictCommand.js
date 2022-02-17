@@ -1,4 +1,4 @@
-import { commandsListPriority } from "../data/commandsListPriority";
+import { commandsListPriority } from "../data/commandsList";
 
 export const predictInput = (input) => {
     if (input !== "") {
