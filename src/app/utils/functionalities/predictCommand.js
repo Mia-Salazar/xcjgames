@@ -1,8 +1,8 @@
-import { commandsList } from "../data/commandsList";
+import { commandsListPriority } from "../data/commandsListPriority";
 
 export const predictInput = (input) => {
     if (input !== "") {
-        const list = commandsList;
+        const list = commandsListPriority;
         const regex = new RegExp("^" + input, "ig");
         const found = list.find(element => regex.test(element));
         if (found) {
