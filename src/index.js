@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import "./i18n";
 import "./index.css";
@@ -12,11 +12,11 @@ const Loader = () => (
 );
 
 ReactDOM.render(
-	<BrowserRouter basename="/">
+	<HashRouter basename="/">
 		<Suspense fallback={<Loader />}>
 			<App />
 		</Suspense>
-	</BrowserRouter>,
+	</HashRouter>,
 	document.getElementById("root")
 );
 reportWebVitals();
