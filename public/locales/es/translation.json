@@ -1,6 +1,6 @@
 {
     "home": {
-        "title": "Te damos la bienvenida a XCJ Games\n\nPara ver el mensaje completo pulse 'enter'\nEscriba el comando 'spanish' para consultar más información en la barra inferior\nWrite 'help' to change language"
+        "title": "Te damos la bienvenida a XCJ Games\n\nPara ver el mensaje completo pulse 'enter' o 'enviar'\nEscriba el comando 'help' para consultar más información en la barra inferior\nWrite 'english' to change language"
     },
     "help": {
         "title": "Ayuda\n\nEstos son los comandos disponibles sobre XCJ Games\nhome: Inicio\nabout: Información general\neducation: Información sobre la educación y formación \nportfolio: Información sobre los proyectos profesionales y personales\ncurrent: Los proyectos y la formación en curso de XCJ Games\nname: Cambiar el texto de la barra de comandos. El nuevo texto debe ser escrito a continuación del comando 'name' tras un espacio y debe ser menor de 10 caracteres.\nspanish: Cambiar el idioma a español\nenglish: Cambiar el idioma a inglés\nmia: Conozca a la desarrolladora que ha hecho esta web"
