@@ -41,7 +41,6 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage, nam
     }
     const handleInputChange = (event) => {
         const value = event.target.value.trimStart().toLowerCase();
-        console.log(value.length)
         if (value.length >= 120) {
             setData("");
         } else {
@@ -54,6 +53,9 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage, nam
     const handleKeyDown = (event) => {
         if (event.keyCode === 13 && data === "") {
             completeText();
+        }
+        if (event.keyCode === 13) {
+            setData(data.trim());
         }
         if (event.keyCode === 9 && predict !== "") {
             setData(data + predict);
