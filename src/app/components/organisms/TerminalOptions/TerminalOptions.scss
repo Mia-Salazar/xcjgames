@@ -64,6 +64,10 @@
         background-color: transparent;
         border: none;
         color: transparent;
+
+        @media (max-width: 475px) {
+            width: calc(100% - 20px - 75px);
+        }
     }
 
 }

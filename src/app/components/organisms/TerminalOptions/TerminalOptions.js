@@ -82,7 +82,7 @@ export const TerminalOptions = ({completeText, resetTextStatus, setLanguage, nam
                 <label className="terminal-options__label" htmlFor="action">{name}<span className="terminal-options__greater">{">"}</span> </label>
                 <InputContent input={data} predict={predict} hasSpace={hasSpace}/>
             </div>
-            <input className="terminal-options__input" type="text" id="action" ref={inputRef} value={data}
+            <input className="terminal-options__input" type="text" id="action" ref={inputRef} value={data} autoComplete="off"
                     name="action" autoFocus onChange={handleInputChange} onKeyDown={handleKeyDown}/>
             <button className="terminal-options__button" type="submit" onClick={handleSubmit}>{i18n.t("send")}</button>
         </form>
